@@ -60,7 +60,7 @@ public class TaskService {
             throw new ToDoExceptions("Task not found", HttpStatus.NOT_FOUND);
         }
 
-        this.repository.markTaskAsDone(id, TaskStatus.DONE);
+        this.repository.markTaskAsDone(id, TaskStatus.ON_TIME);
     }
 
     public void deleteTask(Long id) {
